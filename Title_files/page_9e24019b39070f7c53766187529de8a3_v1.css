@@ -9,7 +9,8 @@
 .table__head {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
-    grid-gap: 1%;
+    align-items: center;
+    grid-gap: 2%;
 }
 
 .table__head {
@@ -93,6 +94,11 @@
     border: none;
 }
 
+.table_teammate_name,
+.team_name {
+    padding: 0 1rem;
+}
+
 .team_name .user-photo {
     width: 40px;
     height: 40px;
@@ -120,7 +126,7 @@
     margin-right: 10px;
 }
 
-.table__head .table_team_scores{
+.table__head .table_team_scores {
     padding: 0 1.1rem 0 0;
 }
 @media (max-width: 960px) {
@@ -132,7 +138,8 @@
     }
 
     .table__row .table_pos::after {
-        left: 9px;
+        left: 15px;
+        width: 22px;
     }
     .table__main {
         font-size: 15px;
@@ -145,12 +152,10 @@
     .table__head {
         grid-template-columns: 2fr 10fr 3fr;
     }
-    
 }
 @media (max-width: 550px) {
     .table__head {
         grid-template-columns: 2fr 10fr 2fr;
-
     }
     .table__row .table_pos {
         width: 22px;
